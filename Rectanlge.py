@@ -1,17 +1,16 @@
-class calculator():
-    def __init__(self, x, y):
-        self.x= x
-        self.y= y
-    def mimateba(self):
-        return self.x + self.y
-    def gamokleba(self):
-        return self.x - self.y
-    def gayofa(self):
-        return self.x/self.y
-    def gamravleba(self):
-        return self.x*self.y
-ricxvebi = calculator(2,3) # რადგან არ მთხოვდა დავალება იუზერის ინფუტს პირდაპირ განვუსაზღვრე
-print("Sum =",ricxvebi.mimateba(),"Subtr =",ricxvebi.gamokleba(),"Div =",ricxvebi.gayofa(),"Mult =",ricxvebi.gamravleba())
+class Rectangle():
+    def __init__(self, sigrdze, sigane):
+        self.sigrdze = sigrdze
+        self.sigane = sigane
+    def area(self):
+        return self.sigrdze*self.sigane
+    def perimeter(self):
+        return (self.sigrdze+self.sigane)*2
+    def print_info(self):
+        return f"Sigrdze = {self.sigrdze}, Sigane = {self.sigane}, Area = {self.area()}, Perimeter = {self.perimeter()}" \
+
+parametrebi = Rectangle(5,6)
+print(parametrebi.print_info())
 
 
 
